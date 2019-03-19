@@ -6,12 +6,13 @@
 
 #include <YSI\y_testing>
 
-Test:NoErrors() { // Functionally can only be tested ingame
-    new
-        Float: X,
-        Float: Y,
-        Float: Z
-    ; // results should be false because playerid 0 isn't connected
-    ASSERT(ScreenToWorldEx(0, 0.0, 0.0, 0.0, X, Y, Z) == false); // calls ScreenToWorld
-    ASSERT(WorldToScreen(0, 0.0, 0.0, 0.0, X, Y) == false); // both use STW_NormCrossProduct
+Test:Compile() { // Just check if everything compiles, functionallity can only be tested ingame
+    new Float: X;
+    new Float: Y;
+    new Float: Z;
+
+    ScreenToWorld(0, 0.0, 0.0, X, Y, Z);
+    ScreenToWorldRayCast(0, 0.0, 0.0, 0.0, X, Y, Z);
+    WorldToScreen(0, 0.0, 0.0, 0.0, X, Y);
+    WorldToScreenCheck(0, 0.0, 0.0, 0.0, X, Y);
 }

@@ -1,0 +1,8 @@
+*.amx
+*.lst
+*.asm
+
+.vscode/
+dependencies/
+
+*.sublime-workspace

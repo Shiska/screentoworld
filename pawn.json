@@ -3,12 +3,19 @@
 	"repo": "screentoworld",
 	"entry": "test.pwn",
     "output": "test.amx",
-    "dependencies": [
-        "Misiur/YSI-Includes"
+    "dev_dependencies": [
+        "pawn-lang/YSI-Includes",
+        "Pottus/ColAndreas"
     ],
     "builds": [
         {
-            "name": "amx"
+            "name": "amx",
+            "args": [
+                "-;+", "-(+", "-d3"
+            ]
+        },
+        {
+            "name": "compat"
         },
         {
             "name": "lst",
@@ -21,6 +28,14 @@
             "args": [
                 "-a"
             ]
+        },
+        {
+            "name": "report",
+            "args": [
+                "-r"
+            ],
+            "input": "screentoworld.inc",
+            "workingdir": "report"
         }
     ],
     "runtime": {
