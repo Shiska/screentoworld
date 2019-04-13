@@ -14,4 +14,4 @@ sampctl package install Shiska/screentoworld
 
 # Reference
 
-* [screentoworld.inc](https://shiska.github.io/screentoworld/report/screentoworld.xml#index)
+* [screentoworld.inc](https://shiska.github.io/screentoworld/1.0/screentoworld.xml#index)

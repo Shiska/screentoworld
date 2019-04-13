@@ -3,6 +3,9 @@
 	"repo": "screentoworld",
 	"entry": "test.pwn",
     "output": "test.amx",
+    "dependencies": [
+        "sampctl/samp-stdlib"
+    ],
     "dev_dependencies": [
         "pawn-lang/YSI-Includes",
         "Pottus/ColAndreas"
