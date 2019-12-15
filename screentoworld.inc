@@ -22,7 +22,7 @@
 
 #tryinclude <colandreas>
 
-enum {
+enum Float: {
     Float: cInGameX = 0.7,
     Float: cInGameY = 0.525,
     Float: cInGameYw = 0.4, // Widescreen
