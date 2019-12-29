@@ -5,7 +5,7 @@
 # Installation
 
 ```bash
-sampctl package install Shiska/screentoworld
+sampctl package install Shiska/screentoworld@test
 ```
 
 ```pawn
